@@ -5,4 +5,8 @@ RSpec.describe StringCalculator do
     calc = StringCalculator.new
     expect(calc.add("")).to eq(0)
   end
+
+  it 'returns thenumbers when it has one input' do
+    expect(StringCalculator.new.add("5")).to eq(5)
+  end
 end
